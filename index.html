@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/ba66fd77a4.js" crossorigin="anonymous"></script>
+  <title>Bootstrap</title>
+
+</head>
+<body>
+  <!-- Inicio cabeçalho -->
+  <header class="p-3 bg-dark text-white"> 
+    <div class="container-fluid">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="../imagens/Free-Travel-PNG-Picture.png" alt="" width="180" height="100" class="d-inline-block align-text-top">
+          </a>
+        <h2 class="text-white title ms-1 me-5" >Let's Go Dev !!!</h2>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="./index.html" class="nav-link px-5 text-white">Home</a></li>
+          <li><a href="#pacotes" class="nav-link px-5 text-white">Pacotes</a></li>
+          <li><a href="#contato"  class="nav-link px-5 text-white">Contato</a></li>
+        </ul>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-4">Login</button>
+          <button type="button" class="btn btn-warning">Cadastre-se</button>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-2">
+      <form class="d-flex">
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Destino...">
+          <datalist id="datalistOptions">
+              <option value="Internacional">
+              <option value="Nacional">
+          </datalist>
+          <input class="form-control me-2 ms-4" type="date">
+          <button class="btn btn-ligth bg-white"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+  </div>
+</header> 
+<!-- Final Cabeçalho -->
+
+
+<div id="carouselExampleCaptions" class="carousel slide mt-0 " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" style="border-radius: 50%; width: 10px; height: 10px;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" style="border-radius: 50%; width: 10px; height: 10px;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" style="border-radius: 50%; width: 10px; height: 10px;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner mt-0">
+    <div class="carousel-item active">
+      <img src="../imagens/reino da magia.jpg"   height="500" class="d-block w-100 ">
+      <div class="carousel-caption  d-md-block">
+        <h5> Walt Disney World Resort.</h5>
+        <p>Venha viver no mundo da Fantasias.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../imagens/olimpia_sp-17.jpg" height="500" class="d-block w-100 " >
+      <div class="carousel-caption  d-md-block">
+        <h5>Thermas de Olímpia</h5>
+        <p>Diversão para familía toda .</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../imagens/ski.png"  height="500" class="d-block w-100 ">
+      <div class="carousel-caption  d-md-block">
+        <h5>Estação De Esqui Bariloche</h5>
+        <p>Venha se aventurar.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<section class="Internacional container-fluid" id="pacotes">
+  <div class="row align-items-center   bg-dark">
+
+  <div class="col mt-5 mb-5 ">
+    <p class="text-center h1 mt-5 text-white">Pacotes Internacionais! </p>
+    <p class=" text-center" >  <small class="text-muted h3">Opção perfeita para você sair da rotina!</small>  
+    </p>
+  </div>
+     
+    <div class="col  mt-5 mb-5" >
+      <div class="card p-2 bg-warning border-white" style="width: 19rem;">
+        <img class="card-img-top" style="height: 260px;" src="../imagens/disney.jpg" alt="Parque da Disney">
+        <div class="card-body">
+      
+            <h5 class="card-title">
+              Walt Disney World Resort.
+            </h5>
+            <p class="card-text"><i class="far fa-calendar"></i> 11 dias/ 10 diárias</p>
+            <ul class="list-itens">
+                <li>Hotel</li>
+                <li>Café da Manhã</li>
+                <li>Passagem Aérea</li>
+               <li>Ingressos</li>
+            </ul>
+            <div>
+                <p class="text-danger">Apartir de <span class="text-decoration-line-through">R$ 14.499</span></p>
+                <div class="row">
+                    <a href="#" class="col link">
+                        <h3 class="text-primary">R$ 12.999</h3>
+                    </a>
+                </div>
+                <div class=" row botton ">
+                  <a href="#" class="btn btn-outline-dark col mt-3" data-bs-toggle="modal" data-bs-target="#disney">Saber +</a>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="col  mt-5 mb-5">
+        <div class="card p-2 bg-warning border-white" style="width: 19rem;">
+          <img class="card-img-top" style="height: 260px;" src="../imagens/cerro-catedral-argentina-pistas-de-esqui-como-C3A9.png" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Estação De Esqui Bariloche
+          </h5>
+          <p class="card-text"><i class="far fa-calendar"></i> 4 dias/ 3 diárias</p>
+          <ul class="list-itens">
+            <li>Hotel</li>
+            <li>Café da Manhã</li>
+            <li>Passagem Aérea</li>
+            <li>Ingressos</li>
+          </ul>
+          <div>
+              <p class="text-danger">Apartir de <span class="text-decoration-line-through">R$ 10.599</span></p>
+              <div class="row">
+                  <a href="#" class="col link">
+                      <h3 class="text-primary">R$ 8.999</h3>
+                  </a>
+             </div>
+              <div class=" row botton ">
+                <a href="#" class="btn btn-outline-dark col mt-3" data-bs-toggle="modal" data-bs-target="#bariloche">Saiba+</a>
+             
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <div class="col  mt-5 mb-5">
+        <div class="card p-2 bg-warning border-white"style="width: 19rem;" >
+          <img class="card-img-top" style="height: 260px;" src="../imagens/seaworld.jpeg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">
+              SeaWorld
+          </h5>
+          <p class="card-text"><i class="far fa-calendar"></i> 8 dias/ 7 diárias</p>
+          <ul class="list-itens">
+            <li>Hotel</li>
+            <li>Café da Manhã</li>
+            <li>Passagem Aérea</li>
+           <li>Ingressos</li>
+          </ul>
+          <div>
+              <p class="text-danger">Apartir de <span class="text-decoration-line-through">R$ 13.599</span></p>
+              <div class="row">
+                  <a href="#" class="col link">
+                      <h3 class="text-primary">R$ 10.599</h3>
+                  </a>
+              </div>
+              <div class=" row botton ">
+                <a href="#" class="btn btn-outline-dark col mt-3" data-bs-toggle="modal" data-bs-target="#SeaWorld">Saiba+</a>
+             
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="Nacional container-fluid">
+
+  <div class="row align-items-center   bg-dark">
+
+    <div class="col mt-5 mb-5 ">
+      <p class="text-center h1 mt-5 text-white">Pacotes Nacionais!</p>  
+      <p class=" text-center" >  <small class="text-muted h3">Diversão para toda Família!</small>  
+      </p>
+    </div>
+ 
+
+
+    <div class="col  mt-5 mb-5">
+      <div class="card p-2 bg-warning border-white" style="width: 19rem;">
+        <img class="card-img-top" style="height: 260px;" src="../imagens/thermas olimpia.jpg" alt="Parque da Disney">
+        <div class="card-body">
+      
+            <h5 class="card-title">
+                Thermas de Olímpia
+            </h5>
+            <p class="card-text"><i class="far fa-calendar"></i> 4 dias/ 3 diárias</p>
+            <ul class="list-itens">
+                <li>Hotel</li>
+                <li>Café da Manhã</li>
+                <li>Passagem</li>
+               <li>Ingressos</li>
+            </ul>
+            <div>
+                <p class="text-danger">Apartir de <span class="text-decoration-line-through">R$ 2.499</span></p>
+                <div class="row">
+                    <a href="#" class="col link">
+                        <h3 class="text-primary">R$ 1.699</h3>
+                    </a>
+                </div>
+                <div class=" row botton ">
+                  <a href="#" class="btn btn-outline-dark col mt-3" data-bs-toggle="modal" data-bs-target="#olimpia">Saiba+</a>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="col  mt-5 mb-5" >
+        <div class="card p-2 bg-warning border-white" style="width: 19rem;">
+          <img class="card-img-top" style="height: 260px;" src="../imagens/Gramado-Snowland.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Snowland, Gramado – RS
+          </h5>
+          <p class="card-text"><i class="far fa-calendar"></i> 7 dias/ 6 diárias</p>
+          <ul class="list-itens">
+            <li>Hotel</li>
+            <li>Café da Manhã</li>
+            <li>Passagem Aérea</li>
+            <li>Ingressos</li>
+          </ul>
+          <div>
+              <p class="text-danger">Apartir de <span class="text-decoration-line-through">R$ 3.499</span></p>
+              <div class="row">
+                  <a href="#" class="col link">
+                      <h3 class="text-primary">R$ 2.999</h3>
+                  </a>
+              </div>
+              <div class=" row botton ">
+                <a href="#" class="btn btn-outline-dark col mt-3" data-bs-toggle="modal" data-bs-target="#Gramado">Saiba+</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <div class="col  mt-5 mb-5">
+        <div class="card p-2 bg-warning border-white" style="width: 19rem;">
+          <img class="card-img-top" style="height: 260px;" src="../imagens/beto.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">
+              Beto Carrero World
+          </h5>
+          <p class="card-text"><i class="far fa-calendar"></i> 8 dias/ 7 diárias</p>
+          <ul class="list-itens">
+            <li>Hotel</li>
+            <li>Café da Manhã</li>
+            <li>Passagem Aérea</li>
+           <li>Ingressos</li>
+          </ul>
+          <div>
+              <p class="text-danger">Apartir de <span class="text-decoration-line-through">R$ 5.599</span></p>
+              <div class="row">
+                  <a href="#" class="col link">
+                      <h3 class="text-primary">R$ 4.499</h3>
+                  </a>
+              </div>
+              <div class=" row botton ">
+                <a href="#" class="btn btn-outline-dark col mt-3" data-bs-toggle="modal" data-bs-target="#beto">Saiba+</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  </div>
+</section>
+<!-- Final lista de pacotes -->
+
+ <!-- Início criação de modal disney -->
+ 
+ <div class="modal fade" id="disney" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Walt Disney World Resort.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Localizado em Orlando, na Flórida, nos Estados Unidos.</p>
+        <p>Mas o que leva essa multidão ao local? A resposta é simples: um misto de fantasia, com atrações tanto lúdicas quanto radicais, onde adultos voltam a ser criança e pequenos têm a oportunidade de viver um
+           pouco do universo dos desenhos que assistem. </p>
+        <p class="text-success">Em até 12x sem juros - Cartão</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adquerir</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim criação de modal disney -->
+
+<!-- Início criação de modal bariloche -->
+ 
+<div class="modal fade" id="bariloche" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Estação de Esqui em  Bariloche.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Localizado na Argentina, em Bariloche, na cidade San Carlos .</p>
+        <p>É um dos destinos mais escolhidos na América Latina quando o assunto é esqui. O Cerro Catedral é a maior, mais conhecida e mais completa estação de esqui do país.
+           A estação possui 53 pistas diferentes para se divertir como se não houvesse o amanhã. Além dos esportes habituais da neve (esqui e snowboard), no Cerro Catedral você ainda pode curtir um circuito para esqui nórdico, o divertido esquibunda, caminhadas com raquetes de neve, motos de neve e o circuito de tubing,
+           um tobogã de neve que você desce numa boa. </p>
+        <p class="text-success">Em até 12x sem juros - Cartão</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adquerir</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim criação de modal bariloche -->
+
+<!-- Início criação de modal SeaWorld -->
+ 
+<div class="modal fade" id="SeaWorld" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Parque SeaWorld.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Localizado em Orlando .</p>
+        <p>Ganhou na categoria melhor parque de vida
+           marinha. O local recebe principalmente
+            famílias com crianças, já que tem a temática voltada para o mundo animal. Ele até oferece alguns brinquedos radicais como montanhas-russas aquáticas, mas o foco está nas atrações com animais marinhos, como o famoso show com orcas. </p>
+        <p class="text-success">Em até 12x sem juros - Cartão</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adquerir</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim criação de modal SeaWorld -->
+
+<!-- Início criação de modal olimpia -->
+ 
+<div class="modal fade" id="olimpia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> Thermas de Olímpia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Localiza-se no interior do estado de São Pauloa na Região Metropolitana
+           de São José do Rio Preto.</p>
+        <br>Com mais de 50 atrações, o Thermas dos Laranjais oferece:<br/>
+          •	Rios;<br/>
+          •	Piscinas;<br/>
+          •	Piscina para surfe;<br/>
+          •	Parque infantil;<br/>
+          •	Toboáguas de até 30 m;<br/>
+          •	Montanha-Russa aquática (maior do mundo, com 1 km de extensão).<br/>
+          •	Baldão: esse chuveiro gigante despeja mais de 1.000 litros de água a cada 3 minutos. Indicado para pessoas acima dos três anos.<br/>
+          •	Mar Azul (com ondas): essa é uma das piscinas de ondas do Thermas dos Laranjais. As águas são quentes (23 a 26 graus) e ondas têm até 1,5m.<br/>
+          •	Piscina Maluca: essa piscina tem obstáculos que flutuam e é ótima para se divertir em família. A temperatura é de 38 graus e crianças com menos de 6 anos precisam de coletes ou boias.<br/>
+          •	Asa delta: essa atração é uma espécie de half pipe, porém molhado e com 18 metros de altura. Ela permite descer em boia dupla, entrar em um toboágua e cair em uma piscina de água quente e atinge a velocidade de 60km/h.<br/>
+          •	Crazy: esse toboágua tem mais de 20m e chega à velocidade de 55 km/h. Ele foi remodelado em 2016 com novos trajetos, curvas e piscinas de recepção.
+          •	Kamikaze: com mais de 30 metros de altura, oferece 5 segundos em queda livre, com a sensação de sair do toboágua.<br/>
+          •	Bolha infantil: essa bolha inflável e molhada permite que crianças a partir de 2 anos se divirtam.<br/>
+          •	Clube das crianças: área com escorregadores, tirolesas, toboáguas, bolha infantil e outras atrações para o público infantil.<br/>
+          •	Hidroterapia: piscina com música e exercícios.<br/>
+          •	Ofurô: A temperatura varia de 35 a 38 graus e a água tem propriedades medicinais.<br/>
+          •	Piscina de pedras: essa piscina possui temperatura que varia entre 34 a 36 graus, com pedras que massageiam os pés.<br/>
+          •	Bares molhados, onde se provam drinques com água até a cintura.
+           </p>
+        <p class="text-success">Em até 12x sem juros - Cartão</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adquerir</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim criação de modal olimpia -->
+
+<!-- Início criação de modal gramado-->
+ 
+<div class="modal fade" id="gramado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Parque de Neve Snowland .</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Localizado na Serra Gaúcha, Gramado – RS .</p>
+        <p>A Serra Gaúcha ganhou um parque de neve indoor. O temático Snowland oferece diversas atividades de inverno em seus 16.000 m². Por lá é possível curtir com a família toda ou com os amigos, tanto no “Vilarejo” como na “Montanha de neve”. O clima é parecido como do inverno europeu, onde as temperaturas ficam em média de -4°, com direito a neve artificial.
+
+          Além da prática de snowboard, escaladas, tobogãs, pista de patinação, caminhadas e passeios de snowmobiles, é possível esquiar como se estivesse em uma montanha gelada de verdade.</p>
+           <p class="text-success">Em até 12x sem juros - Cartão</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adquerir</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim criação de modal gramado -->
+
+<!-- Início criação de modal beto -->
+ 
+<div class="modal fade" id="beto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Beto Carrero World.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Localizado no litoral norte do estado de Santa Catarina,.</p>
+        <p>1 – Velozes e Furiosos
+          A atração tem tudo a ver com o filme Velozes e Furiosos. É um show de carros e motos com direito a muitas manobras radicais e emoções que vão levar o público À loucura. Além disso, você pode ser sorteado para dar uma voltinha em um dos carros.<br/>
+          2 – Crazy River
+          O brinquedo está localizado na área temática do filme Madagascar e é ideal para quem gosta de água. Ele simula o rafting (prática de descer água corrente abaixo com um bote inflável) e leva os visitantes em aproximadamente 1 km de extensão de rio.<br/>
+          3 – Fire Whip
+          Além de já possuir aquela adrenalina de montanha russa, a Fire Whip ainda é totalmente ao contrário! Essa é a única montanha russa invertida localizada no Brasil. Ela tem cerca de 40 metros de altura e a sua velocidade é de 100 km/h.<br/>
+          4 – Super Carros
+          Já pensou em dirigir uma Ferrari, um Camaro ou uma Lamboghini? A atração Super Carros permite que você dê umas voltinhas nesses e outros carros que são o sonho de consumo de qualquer um.<br/>
+          5 – Free Fall
+          Esse é um brinquedo de queda livre com a altura de aproximadamente 50 metros e 90 km/h. Ele possui uma inclinação que deixa o visitante deitado ao final do percurso.<br/>
+          6 – Big Tower
+          Para quem não se contentou com o brinquedo acima, o Big Tower veio para superar as suas expectativas. Com queda livre de 92 metros de altura e 120 km/h, o atrativo traz consigo muita adrenalina e fortes emoções, além de uma vista deslumbrante.<br/>
+          7 – Portal da Escuridão
+          Para entrar nesse portal tem que ter coragem. A atração possui sete salas – cada uma inspirada em um filme de terror – com direito a muitos efeitos especiais e criaturas horrendas. O brinquedo promete testar os seus limites e medos. Ele é pago à parte.<br/>
+          8 – Pista de Kart
+          Para esse atrativo você também deve pagar à parte. Você tem direito a dirigir um carro de lart em uma pista bem realista e sentir a adrenalina dos pilotos de Formula 1. Uma aventura e tanto, não é mesmo?<br/>
+          9 – Tchibum
+          Como o nome já sugere, esse brinquedo promete deixar você completamente encharcado. Trata-se de barcos-troco que navegam a 15 metros de altura até despencarem em um tanque de água a cerca de 80 km/h.<br/>
+          10 – Barco Pirata
+          O barco pirata é um atrativo bem conhecido em diversos parques. Ele é marcado por deixar aquele friozinho na barriga, subindo e descendo em uma altura cada vez maior.
+          
+           </p>
+        <p class="text-success">Em até 12x sem juros - Cartão</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-success">Adquerir</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim criação de modal beto -->
+<div>
+<footer  class="container-fluid border-top bg-warning m-0 " >
+  <div class="row align-items-center w-100" 
+  >
+   
+    <div class=" col-11 justify-content-center " id="contato">
+    
+        <p class="font-italic text-center pb-0 mb-0 ">© 2022 Desenvolvido por Dayane B. O. Rocha - DEVinHouse</p>
+        <address class="font-italic text-center " >Avenida dos Programadores, 1000 - São Paulo - SP</address>
+  
+    </div >
+    <ul class="nav col-md justify-content-end list-unstyled d-flex me-3">
+      <li class="ms-5"><a class="text-danger" href="#"><i class="fab fa-instagram media"></i></a></li>
+      <li class="ms-5"><a class="text-danger" href="#"><i class="fab fa-whatsapp media"></i></a></li>
+      <li class="ms-5"><a class="text-danger " href="#"><i class="far fa-envelope media"></i></a></li>
+    </ul>
+     
+
+</div>
+</footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+ 
+</body>
+</html>
